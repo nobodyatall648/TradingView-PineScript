@@ -1,4 +1,4 @@
-Did some modification of original RSI pinescript to identify the RSI overbrought & oversold zone.
+Did some modification of original RSI pine script to identify the RSI overbrought & oversold zone.
 
 |RSI Value|Zone|
 |---------|--------------|
