@@ -1,4 +1,4 @@
-Did some modification of original DMI pinescript to identify the ADX weak & very weak trend area.
+Did some modification of original DMI pine script to identify the ADX weak & very weak trend area.
 
 |ADX Value|Trend Strength|
 |---------|--------------|
