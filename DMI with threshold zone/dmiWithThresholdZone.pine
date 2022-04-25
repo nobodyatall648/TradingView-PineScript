@@ -20,8 +20,8 @@ weakTrendTH = hline(25, title="1st Threshold", color=color.gray, linestyle=hline
 veryWeakTrendTH = hline(20, title="2nd Threshold", color=color.gray, linestyle=hline.style_dashed)
 
 //color background based on volatility (high -> low)
-fill(plot1=plot(75), plot2=plot(100), color=#ED020B, transp=80)
-fill(plot1=plot(50), plot2=plot(75), color=#F46528, transp=80)
-fill(plot1=plot(25), plot2=plot(50), color=#FFCA2B, transp=80)
-fill(plot1=plot(20), plot2=plot(25), color=#ADDEFA, transp=80)
-fill(plot1=plot(0), plot2=plot(20), color=#7FB005, transp=80)
+fill(plot1=plot(75, transp=100), plot2=plot(100, transp=100), color=#ED020B, transp=80)
+fill(plot1=plot(50, transp=100), plot2=plot(75, transp=100), color=#F46528, transp=80)
+fill(plot1=plot(25, transp=100), plot2=plot(50, transp=100), color=#FFCA2B, transp=80)
+fill(plot1=plot(20, transp=100), plot2=plot(25, transp=100), color=#ADDEFA, transp=80)
+fill(plot1=plot(0, transp=100), plot2=plot(20, transp=100), color=#7FB005, transp=80)
