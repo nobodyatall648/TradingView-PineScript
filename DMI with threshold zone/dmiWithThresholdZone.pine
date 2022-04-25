@@ -1,3 +1,4 @@
+//@version=5
 indicator(title="Directional Movement Index", shorttitle="DMI", format=format.price, precision=4, timeframe="", timeframe_gaps=true)
 lensig = input.int(14, title="ADX Smoothing", minval=1, maxval=50)
 len = input.int(14, minval=1, title="DI Length")
@@ -17,3 +18,10 @@ plot(minus, color=#ff1a1a, title="-DI")
 //add horizontal line => threshold
 weakTrendTH = hline(25, title="1st Threshold", color=color.gray, linestyle=hline.style_dashed)
 veryWeakTrendTH = hline(20, title="2nd Threshold", color=color.gray, linestyle=hline.style_dashed)
+
+//color background based on volatility (high -> low)
+fill(plot1=plot(75), plot2=plot(100), color=#ED020B, transp=75)
+fill(plot1=plot(50), plot2=plot(75), color=#F46528, transp=75)
+fill(plot1=plot(25), plot2=plot(50), color=#FFCA2B, transp=75)
+fill(plot1=plot(20), plot2=plot(25), color=#ADDEFA, transp=75)
+fill(plot1=plot(0), plot2=plot(20), color=#7FB005, transp=75)
